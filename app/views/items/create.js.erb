@@ -1,0 +1,1 @@
+$('#list-items').html("<%= escape_javascript(render(:partial => 'items/item', :collection => @list.items.sort!{ |a,b| (b.up_votes - b.down_votes) <=> (a.up_votes - a.down_votes) })) %>");

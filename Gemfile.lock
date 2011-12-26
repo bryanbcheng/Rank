@@ -72,6 +72,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jquery-rails (>= 1.0.3)
+  jquery-rails (>= 1.0.12)
   mysql2 (< 0.3)
   rails (= 3.0.7)

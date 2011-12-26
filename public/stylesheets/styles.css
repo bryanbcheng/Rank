@@ -1,0 +1,23 @@
+
+.item {
+  display: block;
+  clear: both;
+  min-height: 40px;
+}
+
+.scores {
+  float: left;
+  height: 40px;
+  width: 50px;
+}
+
+.name {
+  font-weight: bold;
+  float: left;
+  width: 100px;
+}
+
+.description {
+  //float: left;
+  width: 150px;
+}

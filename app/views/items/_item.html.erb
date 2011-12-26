@@ -1,0 +1,9 @@
+<div class='item'>
+  <div class='scores'>
+    <%= link_to '+', upvote_list_item_path(item.list, item), :remote => true %>
+    <%= item.up_votes - item.down_votes %>
+    <%= link_to '-', downvote_list_item_path(item.list, item), :remote => true %>
+  </div>
+  <div class='name'><%= item.name %></div>
+  <div class='description'><%= item.description %></div>
+</div>

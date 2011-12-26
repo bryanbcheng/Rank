@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @list.name %>
+</p>
+
+<div id='list-items'>
+    <%= render(:partial => "items/item", :collection => @items.sort!{ |a,b| (b.up_votes - b.down_votes) <=> (a.up_votes - a.down_votes) }) %>
+</div>
+
+
+<h2>Add an item</h2>
+<%= render(:partial => "items/form") %>
+
+<%= link_to 'Edit', edit_list_path(@list) %> |
+<%= link_to 'Back', lists_path %>
